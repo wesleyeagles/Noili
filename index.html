@@ -15,6 +15,33 @@
     })(window,document,'script','dataLayer','GTM-MGTTF3Q');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Global site tag (gtag.js) - Google Ads: 10784897839 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10784897839"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10784897839');
+</script>
+
+<!-- Event snippet for Inscrição - SERVIÇO SITE. conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10784897839/ZHeeCK-IuPkCEK_20ZYo',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
 
 
 <style>
@@ -29,6 +56,8 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGTTF3Q"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <button onclick="gtag_report_conversion(url)">Teste de Conversão</button>
     
     
 </body>
@@ -38,16 +67,7 @@
 
     
 
-    let res = window.prompt("Vamos de Noili hoje então ? Sim ou Não");
-    let resposta = res.toUpperCase();
-
-    if (resposta == "SIM") {  document.write(`Vambora pohaaa`) } 
-    else if (resposta == "SIMM") { document.write(`Vambora pohaaa`) }
-    else if (resposta == "AHAM") { document.write(`Vambora pohaaa`) } 
-
-    else if (resposta == "NAO") { document.write(`puta`) } 
     
-    else window.prompt("Se é burro é ?");
         
     
 
